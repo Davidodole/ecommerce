@@ -1,0 +1,10 @@
+
+
+
+function CopyRight(){
+    return(
+        <>
+            .
+        </>
+    )
+}

@@ -1,0 +1,46 @@
+
+.wrap_card img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.wrap_card .card{
+    box-shadow: 0 0 .7em #444;
+    width: auto;
+}
+.wrap_card .card:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+.money{
+    display: flex;
+    justify-content: space-between;
+}
+.money p{
+    color: #444;
+}
+.money p:nth-child(2){
+    text-decoration: line-through;
+}
+.wrap_content {
+    padding: 0 .7em 1em;
+}
+.wrap_content button{
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    background-color: #13135a;
+    border-radius: 10px;
+    border: none;
+    margin: .7em 0;
+}
+.wrap_content span{
+    text-align: center;
+    line-height: 3;
+    font-size: 20px;
+    font-weight: 500;
+    color: #13135a;
+}

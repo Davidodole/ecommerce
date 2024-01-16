@@ -1,0 +1,47 @@
+.items{
+    padding: 30px 10%;
+    text-align: center;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    color: #13135a;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+hr{
+    border: none;
+    height: 5px;
+    background-color: #444;
+    margin: 1em 0 0;
+    width: 20%;
+    border-radius: 3px;
+}
+.card_wrap{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1em;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .card_wrap{
+        display: grid;
+        overflow: auto;
+        white-space: nowrap;
+        text-align: center;
+        scroll-behavior: smooth;
+    }
+    .wrapper{
+        padding: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}

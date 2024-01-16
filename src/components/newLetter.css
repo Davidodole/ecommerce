@@ -1,0 +1,61 @@
+.news_letter{
+    padding: 30px 8%;
+}
+.newsLetter h1{
+    color: #13135a;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+.newsLetter p{
+    font-size: 22px;
+    line-height: 2;
+}
+.newsLetter{
+    padding: 6em;
+    background-color: #21a8a8fb;
+    text-align: center;
+    display: grid;
+    gap: 1.3em;
+}
+.newsLetter form{
+    display: flex;
+    margin: 1em;
+    gap: 2em;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+.newsLetter form input{
+    height: 50px;
+    width: 400px;
+    background-color: #eafbfbfb;
+    padding: 1em;
+    border: none;
+    box-shadow: 0 0 .6em #444;
+    outline: none;
+    text-transform: capitalize;
+    color: #444;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.newsLetter form button{
+    height: 40px;
+    width: 140px;
+    padding: 1em;
+    border: 1px solid #444;
+    background-color: #13135a;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.newsLetter form button:hover{
+    background-color: #1e1e92;
+}

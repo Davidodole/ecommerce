@@ -1,0 +1,108 @@
+.navbar{
+    padding: 30px 8% 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eafbfbfb;
+    align-items: center;
+    box-shadow: 0 0 .7em #444;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar img{
+    height: 60px;
+}
+.nav_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4em;
+}
+.navbar p{
+    font-size: 2.3em;
+    font-weight: 600;
+}
+.navbar_items{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    z-index: 1000;
+}
+.login button{
+    border-radius: 18px;
+    height: 45px;
+    width: 95px;
+    font-size: 1em;
+    color: #7a7a7a;
+    background-color: #eafbfbfb;
+    border: 1px solid #7a7a7a;
+    cursor: pointer;
+}
+.login button:hover{
+    background-color: #f0fdfdfb;
+    color: #777;
+}
+li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #7a7a7a;
+}
+.icon i{
+    color: #13135a;
+}
+.navbar button{
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .navbar p{
+        font-size: 1.7em;
+    }
+    .navbar_items{
+        display: block;
+        position: fixed;
+        right: 0;
+        width: 300px;
+        height: 0;
+        top: 4.4em;
+        background-color: #eafbfbfb;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .navbar_items li{
+        padding: 15px;
+    }
+    .navbar_items li a{
+        font-size: 1.5em;
+    }
+    .navbar_items li a:hover{
+        color: #13135a;
+    }
+    .navbar button{
+        display: block;
+        outline: none;
+        font-size: 1.8rem;
+        color: #444;
+        border: none;
+        background-color: transparent;
+        line-height: 2;
+        z-index: 1000;
+    }
+    .navbar .login{
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+.homepage{
+    padding: 40px 10%;
+    display: grid;
+    grid-auto-flow: column;
+}
+.info{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info h1{
+    color: #13135a;
+    font-size: 2.5em;
+    line-height: 2;
+}
+.shop{
+    margin: 3em 0;
+    height: 40px;
+}
+.shop a{
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 0 .7em #13135a;
+    font-weight: 500;
+    padding: 1em 2em;
+    height: 100%;
+    width: 120px;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+.shop a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    background-color: #444;
+}
+.shop a:hover:before{
+    width: 100%;
+}
+.shop a:hover{
+    color: #eaeaea;
+}

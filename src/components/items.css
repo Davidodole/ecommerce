@@ -1,0 +1,26 @@
+
+.items .item{
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1em;
+}
+.items{
+    padding: 20px 5%;
+}
+
+@media screen and (max-width: 1200px) {
+    .items .item{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .items .item{
+        display: grid;
+        justify-content: center;
+        grid-template-columns:auto auto;
+    }
+}
