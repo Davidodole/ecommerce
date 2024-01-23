@@ -4,7 +4,7 @@ function NewsLetter(){
     return(
         <>
         <div className="news_letter">
-        <div className="items">
+            <div className="items">
                 <div className="wrap">
                 <h2>NewsLetter</h2>
                 <hr />

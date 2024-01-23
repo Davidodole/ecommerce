@@ -5,13 +5,14 @@
 .wrap_banner{
     box-shadow: 0 0 .7rem #444;
     padding: 4em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: linear-gradient(55deg, #88ebebfb 40%, white 60%);
+    background-image: linear-gradient(80deg,#0dcfcffb 50%, rgba(231, 228, 228, 0.338) 0%);
+    display: grid;
+    grid-template-columns: minmax(200px, 400px);
+    grid-auto-flow: column;
+    justify-content: space-between;
 }
 .image_banner img{
-    height: 100%;
+    width: 300px;
 }
 .banner_content h1{
     font-size: 3em;
@@ -23,23 +24,58 @@
     font-family: 'Libre Baskerville', serif;
 
 }
+.banner_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .banner_content button{
-    font-size: 22px;
+    font-size: 19px;
     line-height: 3;
+    width: 130px;
     padding: 0 .5em;
     font-weight: 500;
     color: #13135a;
     background-color: transparent;
     cursor: pointer;
-    border: 1px solid #fff;
+    border: none;
     border-radius: 10px;
-    box-shadow: 0 0 1em #fff;
+    box-shadow: 0 0 1em #444;
     margin: 1em 0 0;
 }
 .banner_content p{
-    font-size: 2.3em;
+    font-size: 1.6em;
     text-transform: capitalize;
     font-weight: 500;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
+}
+
+
+@media screen and (max-width: 1193px) {
+    .image_banner img{
+        width: 200px;
+    }
+    .banner_content h1{
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 1;
+        padding: .2em 0 0;
+        letter-spacing: 1px;
+        color: #13135a;
+        font-family: 'Libre Baskerville', serif;
+    
+    }
+}
+@media screen and (max-width: 700px) {
+    .wrap_banner{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 0 20px;
+    }
+    .image_banner img {
+        width: 150px;
+        height: 150px;
+        float: right;
+    }
 }

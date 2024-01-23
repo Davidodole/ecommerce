@@ -64,9 +64,7 @@ li a{
 
 @media screen and (max-width: 1000px){
     .navbar{
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
+        padding: 20px 5%;
     }
     .navbar p{
         font-size: 1.7em;
@@ -77,9 +75,8 @@ li a{
         right: 0;
         width: 300px;
         height: 0;
-        top: 4.4em;
+        top: 7em;
         background-color: #eafbfbfb;
-        padding: 20px;
         text-align: center;
         overflow: hidden;
     }

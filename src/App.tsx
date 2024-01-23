@@ -22,7 +22,7 @@ const App = ()=>{
       imageUrl={bannerImage}
       />
       <Items />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       <Footer />
     </>
   )

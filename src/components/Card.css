@@ -1,7 +1,7 @@
 
 .wrap_card img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 .wrap_card .card{
@@ -43,4 +43,12 @@
     font-size: 20px;
     font-weight: 500;
     color: #13135a;
+}
+
+@media  screen and (max-width: 712px) and (orientation: portrait) {
+    .wrap_card img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
 }

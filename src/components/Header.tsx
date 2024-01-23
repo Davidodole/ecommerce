@@ -24,7 +24,7 @@ function Header(){
                 <i className="fa-solid fa-2x fa-cart-shopping"></i>
                 </div>
             </div>
-            <button type="submit"><i className="fa-solid fa-bars"></i></button>
+            <button><i className="fa-solid fa-bars"></i></button>
         </div>
         </>
     )

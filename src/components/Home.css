@@ -1,17 +1,21 @@
 .homepage{
     padding: 40px 10%;
     display: grid;
+    grid-template-columns: auto-fill;
     grid-auto-flow: column;
 }
+.homepage .image{
+    width: fit-content;
+}
 .info{
-    max-width: 600px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .info h1{
     color: #13135a;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 2;
 }
 .shop{
@@ -46,4 +50,35 @@
 }
 .shop a:hover{
     color: #eaeaea;
+}
+
+
+@media  screen and (max-width: 1000px) {
+    .homepage{
+        padding: 40px 2% 40px 7%;
+    }
+    .homepage h1{
+        font-size: 1.6em;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+   .homepage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.255), rgba(0, 0, 0, 0.501)), url("/src/image/girl.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 40px;
+    color: #eaeaea;
+    padding: 5em 10%;
+   }
+   .homepage h1{
+    color: #0a0223;
+   }
+   .homepage p{
+    color: #292927;
+   }
+   .homepage .image{
+    display: none;
+   }
 }
