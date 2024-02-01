@@ -5,3 +5,11 @@
     padding: 20px;
     background: linear-gradient(120deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
 }
+
+
+
+@media screen and (max-width: 600px) {
+    p{
+        font-size: 15px;
+    }
+}

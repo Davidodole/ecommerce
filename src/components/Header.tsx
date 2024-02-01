@@ -5,6 +5,13 @@ import { useState } from "react";
 
 function Header(){
 
+    const [isActive, setIsActive] = useState(false);
+
+    function handleBtn(){
+        
+        setIsActive(!isActive)
+    };
+
     return(
         <>
         <div className="navbar">
@@ -12,7 +19,7 @@ function Header(){
             <img src={logo} alt="" /> 
             <p>GBsquare</p>  
             </div>
-            <ul className="navbar_items">
+            <ul className={isActive ? "open" : null}>
                 <li><a href="/">Shop</a></li>
                 <li><a href="/">Men</a></li>
                 <li><a href="/">Women</a></li>
@@ -24,7 +31,7 @@ function Header(){
                 <i className="fa-solid fa-2x fa-cart-shopping"></i>
                 </div>
             </div>
-            <button><i className="fa-solid fa-bars"></i></button>
+            <button onClick={handleBtn}><i className="fa-solid fa-bars"></i></button>
         </div>
         </>
     )

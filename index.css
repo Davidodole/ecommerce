@@ -4,12 +4,22 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #eee;
 }
+
 p{
     font-size: 19px;
     color: #444;
     line-height: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+
 }

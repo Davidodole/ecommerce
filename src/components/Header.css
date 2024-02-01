@@ -20,7 +20,7 @@
     font-size: 2.3em;
     font-weight: 600;
 }
-.navbar_items{
+.navbar ul{
     display: flex;
     gap: 2em;
     list-style: none;
@@ -64,30 +64,43 @@ li a{
 
 @media screen and (max-width: 1000px){
     .navbar{
-        padding: 20px 5%;
+        padding: 10px 5%;
+        width: 100%;
+        position: fixed;
+        margin-bottom: 3em;
+    }
+    .navbar img{
+        height: 40px;
     }
     .navbar p{
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
-    .navbar_items{
+    .navbar ul{
         display: block;
-        position: fixed;
-        right: 0;
-        width: 300px;
+        position: absolute;
+        width: 100%;
         height: 0;
-        top: 7em;
-        background-color: #eafbfbfb;
-        text-align: center;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 5em;
+        background-color: #444444bd;
+        backdrop-filter: blur(2px);
+        transition: all 1s;
+        padding: 0 10px;
         overflow: hidden;
     }
-    .navbar_items li{
-        padding: 15px;
+    .navbar ul li{
+        padding: 20px 25px;
     }
-    .navbar_items li a{
-        font-size: 1.5em;
+    .navbar li a{
+        font-size: 1em;
+        display: block;
+
+        color: aqua;
     }
-    .navbar_items li a:hover{
-        color: #13135a;
+    .navbar ul li a:hover{
+        color: #eafbfbfb;
     }
     .navbar button{
         display: block;
@@ -98,6 +111,10 @@ li a{
         background-color: transparent;
         line-height: 2;
         z-index: 1000;
+    }
+    .navbar .open{
+        height: 100dvh;
+        transition: all 1s;
     }
     .navbar .login{
         display: none;
