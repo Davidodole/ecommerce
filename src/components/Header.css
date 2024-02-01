@@ -68,6 +68,7 @@ li a{
         width: 100%;
         position: fixed;
         margin-bottom: 3em;
+        z-index: 11;
     }
     .navbar img{
         height: 40px;
