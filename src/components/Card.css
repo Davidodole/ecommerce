@@ -52,4 +52,8 @@
         object-fit: cover;
         padding-top: 10px;
     }
+    .wrap_content button{
+      font-size: 12px;
+      height: 30px;
+    }
 }

@@ -16,9 +16,10 @@
 @media  screen and (max-width: 712px) and (orientation: portrait) {
     .items .item{
 
-        padding: 50px 5%;
+        padding: 30px 6% 30px 1%;
         display: grid;
         grid-template-columns: auto auto;
         gap: 1em;
     }
+    
 }

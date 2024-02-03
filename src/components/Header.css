@@ -74,7 +74,7 @@ li a{
         height: 40px;
     }
     .navbar p{
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     .navbar ul{
         display: block;
@@ -83,7 +83,7 @@ li a{
         height: 100dvh;
         left: 0;
         margin: auto;
-        top: 5em;
+        top: 3.8em;
         background-color: #444444db;
         backdrop-filter: blur(2px);
         transition: all 1s;
@@ -105,7 +105,7 @@ li a{
     .navbar button{
         display: block;
         outline: none;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         color: #444;
         border: none;
         background-color: transparent;

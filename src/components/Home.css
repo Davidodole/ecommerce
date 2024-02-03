@@ -64,7 +64,7 @@
 
 @media  screen and (max-width: 800px) {
    .homepage{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.255), rgba(0, 0, 0, 0.501)), url("/src/image/girl.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.255), rgba(0, 0, 0, 0.8)), url("/src/image/girl.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,5 +80,14 @@
    }
    .homepage .image{
     display: none;
+   }
+}
+@media  screen and (max-width: 712px) and (orientation: portrait){
+  .shop a{
+    color: #eafbfb;
+    padding: 10px 20px;
+  }
+  .homepage p{
+    color: #eafbfb;
    }
 }

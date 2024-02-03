@@ -5,7 +5,7 @@
 .wrap_banner{
     box-shadow: 0 0 .7rem #444;
     padding: 4em;
-    background-image: linear-gradient(80deg,#0dcfcffb 50%, rgba(231, 228, 228, 0.338) 0%);
+    background-image: linear-gradient(80deg,#0dcfcffb , rgba(231, 228, 228, 0.338));
     display: grid;
     grid-template-columns: minmax(200px, 400px);
     grid-auto-flow: column;
@@ -72,10 +72,25 @@
         display: flex;
         flex-direction: column;
         padding: 20px 0 0 20px;
+        padding: 2em;
     }
     .image_banner img {
         width: 150px;
         height: 150px;
-        float: right;
+        display: none;
     }
+    .banner_content button{
+      font-size: 10px;
+      width: fit-content;
+      border: 1px solid #777;
+    }
+    .banner_content h1{
+        font-size: 1.7em;
+        font-weight: 800;
+        line-height: 1;
+        padding: .2em 0 0;
+        letter-spacing: 1px;
+        color: #13135a;
+        font-family: 'Libre Baskerville', serif;
+    
 }
