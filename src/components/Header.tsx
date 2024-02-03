@@ -19,7 +19,7 @@ function Header(){
             <img src={logo} alt="" /> 
             <p>GBsquare</p>  
             </div>
-            <ul className={isActive ? "open" : null}>
+            <ul className={isActive ? "open": ""}>
                 <li><a href="/">Shop</a></li>
                 <li><a href="/">Men</a></li>
                 <li><a href="/">Women</a></li>
