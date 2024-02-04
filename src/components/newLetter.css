@@ -11,7 +11,7 @@
     line-height: 2;
 }
 .newsLetter{
-    padding: 6em;
+    padding: 3em 3.5em;
     background-color: #21a8a8fb;
     text-align: center;
     display: grid;
@@ -19,7 +19,6 @@
 }
 .newsLetter form{
     display: flex;
-    margin: 1em;
     gap: 2em;
     justify-content: center;
     flex-direction: column;
@@ -28,7 +27,7 @@
 }
 .newsLetter form input{
     height: 50px;
-    width: 400px;
+    width: 300px;
     background-color: #eafbfbfb;
     padding: 1em;
     border: none;
@@ -36,7 +35,7 @@
     outline: none;
     text-transform: capitalize;
     color: #444;
-    font-size: 21px;
+    font-size: 19px;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -55,4 +54,29 @@
 }
 .newsLetter form button:hover{
     background-color: #1e1e92;
+}
+.news_letter{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3em;
+}
+
+@media  screen and (max-width: 712px) and (orientation: portrait){
+  .newsLetter p{
+    font-size: 14px;
+  }
+  .newsLetter h1{
+    font-size: 1.3em;
+  }
+  .newsLetter form input{
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+  }
+  .newsLetter form button{
+    font-size: 16px;
+    width: 110px;
+    height: 30px;
+  }
 }

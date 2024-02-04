@@ -16,9 +16,9 @@ function NewsLetter(){
                 <p>Enter your email in the box below and press the subscribe button <br /> you will be the first to get update of our new arrivers</p>
                </div>
 
-                <form action="/" autoComplete="off">
-                    <input type="email"  placeholder="Email"/>
-                    <button type="submit">Subscribe</button>
+ <form action="/">
+    <input type="email" autoComplete="on" name="email" placeholder="Email"/>
+ <button type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
